@@ -12,7 +12,7 @@ Buatlah query untuk:
 Π siswa-nama, kelas-nomor(σ siswa.siswa-nim = e.siswa-nim(siswa X ρ e (σ d.jadwal-kode = daftar-hadir.jadwal-kode((ρ d (σ kelas-nomor= ”1C” (jadwal)) X daftar-hadir)))))
 
 2. Cari seluruh guru yang tidak menjadi wali kelas.
-
+Π guru-nama (guru) - Π guru-nama (σ guru.guru-nig = kelas.guru-nig (siswa X kelas))
 
 3. Tampilkan siswa yang lahir setelah tanggal 1 Januari 2002.
 Π siswa-nama, siswa-tanggal-lahir (σ siswa-tanggal-lahir > 1 januari 2002 (siswa))
